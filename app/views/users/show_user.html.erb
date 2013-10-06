@@ -1,0 +1,9 @@
+<h2 style="color:blue" > Showing Just created User  </h2>
+
+<%= @user.name %><br/>
+<%= @user.mail_id %><br/>
+ 
+
+<%= link_to 'Edit This' , action: :edit_user , id: @user.id %>
+
+<%= link_to 'Delete' , action: :destroy_user , id: @user.id %>

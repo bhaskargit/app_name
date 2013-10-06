@@ -1,0 +1,20 @@
+
+<h2 style="color:red">Listing all created users </h2>
+
+<%  @users.each do |user| %>
+<%= user.name %><br/>
+<%= user.mail_id %><br/>
+
+<%= link_to 'Show '  ,action:  :show_user , id: user.id %>    
+&nbsp;&nbsp;
+
+<%= link_to 'Edit'   , action:  :edit_user , id: user.id %>
+
+&nbsp;&nbsp;
+
+<%= link_to 'Destroy', { action: :destroy_user , id: user.id },
+                    method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<hr style="color:blue"/>
+
+<% end %>

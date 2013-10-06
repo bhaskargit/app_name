@@ -1,0 +1,10 @@
+
+
+<%= form_for @user , :url => 'create_user' do |f| %>
+
+ Name <%= f.text_field  :name%><br/>
+Mail_id <%= f.text_field  :mail_id %> <br/>
+<%= f.submit %> <br/>
+
+<% end %>
+ 
